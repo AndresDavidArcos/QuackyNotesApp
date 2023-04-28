@@ -102,9 +102,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'quakynotes_db',
-        'USER': 'quaky_root',
-        'PASSWORD': 'quakyNotes',
-        'HOST': 'localhost',
+        'USER': 'postgres',
+        'PASSWORD': 'postgresql',
+        'HOST': 'quakynotesdb',
         'PORT': '5432',
     }
 }

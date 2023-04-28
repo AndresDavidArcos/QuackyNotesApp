@@ -1,4 +1,5 @@
 import "./App.css";
+import Formulario from "./Formulario";
 
 function App() {
   return (
@@ -8,7 +9,9 @@ function App() {
         <li>Elemento 2</li>
         <li>sheily y andres modificacion</li>
       </ul>
+      <Formulario />
     </div>
+    
   );
 }
 

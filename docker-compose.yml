@@ -1,0 +1,56 @@
+version: '3'
+
+services:
+  frontend:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    env_file: ./web/.env
+    container_name: frontend
+    restart: always
+    expose:
+      - "3000"
+    ports:
+      - "3000:3000"
+    networks:
+      - quackynotes-networks
+
+  backend:
+     build:
+       context: ./backend
+       dockerfile: Dockerfile
+     restart: always
+     depends_on:
+       - quakynotesdb
+     environment:
+       DB_HOST: localhost
+       DB_PORT: 5432
+       POSTGRES_USER: postgres
+       POSTGRES_PASSWORD: postgresql
+       POSTGRES_DB: quakynotes_db
+     ports:
+       - "8000:8000"
+     networks:
+      - quackynotes-networks
+     volumes:
+       - ./backend:/app
+
+  quakynotesdb:
+    image: postgres
+    environment:
+      DB_HOST: localhost
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgresql
+      POSTGRES_DB: quakynotes_db
+    ports:
+      - "5432:5432"
+    networks:
+      - quackynotes-networks
+    volumes:
+      - myquackydb-data:/var/lib/postgresql/data
+
+networks:
+  quackynotes-networks:
+  
+volumes:
+  myquackydb-data:
