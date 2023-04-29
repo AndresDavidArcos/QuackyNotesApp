@@ -33,7 +33,7 @@ services:
      networks:
       - quackynotes-networks
      volumes:
-       - ./backend:/app
+       - ./backend:/app  
 
   quakynotesdb:
     image: postgres
