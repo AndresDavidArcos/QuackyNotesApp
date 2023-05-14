@@ -29,3 +29,19 @@ class LoginView(APIView):
         return Response({
             'message': 'Usuario logeado correctamente'
         })
+    
+class ChangeData(APIView):
+    def put(self, request, pk):
+        user = self.get_user(pk)
+        serializer = UserSerializer(user, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=400)
+    
+    def get_user(self, pk):
+        try:
+            user = Usuarios.objects.get(pk=pk)
+            return user
+        except Usuarios.DoesNotExist:
+            raise NotFound('User not found')
