@@ -99,16 +99,6 @@ DATABASES = {
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'quakynotes_db',
-#         'USER': 'postgres',
-#         'PASSWORD': 'postgresql',
-#         'HOST': 'quakynotes_db',
-#         'PORT': 5432,
-#     }
-# }
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
