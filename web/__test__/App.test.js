@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Notes from './components/Notes';
+import Notes from '../src/components/Notes';
 import { MemoryRouter } from 'react-router-dom';
 
 describe("Pruebas con JEST", () => {
