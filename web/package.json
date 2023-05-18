@@ -26,7 +26,7 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "testResultsProcessor": "<rootDir>/tests"
+    "testResultsProcessor": "web/tests"
   },
   "eslintConfig": {
     "extends": [
