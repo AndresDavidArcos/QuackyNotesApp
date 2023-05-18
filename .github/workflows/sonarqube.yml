@@ -28,6 +28,8 @@ jobs:
 
       - name: SonarQube Scanner
         uses: sonarsource/sonarqube-scan-action@master
+        with:
+        projectBaseDir: .
         env:
           SONAR_HOST_URL: ${{ secrets.SONAR_URL }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
