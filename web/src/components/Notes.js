@@ -4,7 +4,7 @@ import NavBar from'./NavBar'
 
 function Notes() {
   const location = useLocation();
-  const user = location.state.user;
+  const user = location.state;
   console.log(location)
   return (
     <>
