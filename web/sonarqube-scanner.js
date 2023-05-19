@@ -5,7 +5,7 @@ scanner(
     options: {
       "sonar.login": "admin",
       "sonar.password": "xtiOmmD0e",
-      "sonar.projectName": "react_app",
+      "sonar.projectName": "quackynotes_app",
       "sonar.projectDescription": "Just for demo...",
       "sonar.sourceEncoding": "UTF-8",
       "sonar.sources": "./src",

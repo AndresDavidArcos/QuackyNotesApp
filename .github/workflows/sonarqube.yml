@@ -26,10 +26,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: jest report
+        run: npm run sonar-test
+
       - name: SonarQube Scanner
         uses: sonarsource/sonarqube-scan-action@master
-        with:
-        projectBaseDir: .
         env:
           SONAR_HOST_URL: ${{ secrets.SONAR_URL }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
