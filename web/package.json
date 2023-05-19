@@ -24,6 +24,10 @@
     "eject": "react-scripts eject",
     "sonar": "sonar-scanner"
   },
+  "jest": {
+    "testEnvironment": "node",
+    "testResultsProcessor": "web/tests"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -41,5 +45,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "jest-sonar-reporter": "^2.0.0"
   }
 }

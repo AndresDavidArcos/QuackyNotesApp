@@ -4,7 +4,7 @@ import NavBar from'./NavBar'
 
 function Notes() {
   const location = useLocation();
-  const user = location.state.user;
+  const user = location.state;
   console.log(location)
   return (
     <>
@@ -13,7 +13,7 @@ function Notes() {
       <p>Datos del usuario logeado: {`id: ${user.id}, nombre: ${user.nombre}, apellidos: ${user.apellidos}`}</p>
     )}
       <ul>
-      <li>Nota 1</li>
+      <li>Esta es la nota 1</li>
       <li>Nota 2</li>
       <li>Nota 3</li>
     </ul>
