@@ -1,0 +1,25 @@
+version: 0.2
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+phases:
+  pre_build:
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm build
+      - npm test
+
+reports:
+  jest_reports:
+    files:
+      - test-report.xml
+    file-format: JUNITXML
+    base-directory: reporter

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="4" failures="0" errors="0" time="19.858">
+  <testsuite name="Pruebas con JEST" errors="0" failures="0" skipped="0" timestamp="2023-05-19T03:14:13" time="9.187" tests="1">
+    <testcase classname="Pruebas con JEST renderiza 3 elementos de tipo li" name="Pruebas con JEST renderiza 3 elementos de tipo li" time="0.409">
+    </testcase>
+  </testsuite>
+  <testsuite name="Login component" errors="0" failures="0" skipped="0" timestamp="2023-05-19T03:14:13" time="11.579" tests="3">
+    <testcase classname="Login component should display an error message for unrecognized email" name="Login component should display an error message for unrecognized email" time="0.483">
+    </testcase>
+    <testcase classname="Login component should display an error message for incorrect password" name="Login component should display an error message for incorrect password" time="0.185">
+    </testcase>
+    <testcase classname="Login component navegación después de una respuesta exitosa" name="Login component navegación después de una respuesta exitosa" time="0.241">
+    </testcase>
+  </testsuite>
+</testsuites>

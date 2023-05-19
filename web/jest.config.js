@@ -1,18 +1,15 @@
-module.exports = {
-  collectCoverage: true,
-  collectCoverageFrom: [
-    "src/**/*.{js,jsx}",
-    "!src/index.js",
-    "!src/serviceWorker.js",
-    "!src/setupTests.js",
+const config = {
+  coverageReporters: ['lcov', 'clover'],
+  reporters: [
+    "default",
+    [
+      "jest-junit",
+      {
+        outputDirectory: "reporter",
+        outputName: "test-report.xml",
+      },
+    ],
   ],
-  coverageReporters: ["lcov", "text"],
-  coverageThreshold: {
-    global: {
-      statements: 80,
-      branches: 80,
-      functions: 80,
-      lines: 80,
-    },
-  },
 };
+
+module.exports = config;

@@ -1,6 +1,0 @@
-projectKey=quackynotes
-serverUrl=http://localhost:9000
-serverVersion=10.0.0.68432
-dashboardUrl=http://localhost:9000/dashboard?id=quackynotes
-ceTaskId=AYgv5kS21Jdollxx_Ai-
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYgv5kS21Jdollxx_Ai-
