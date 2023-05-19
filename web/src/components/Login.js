@@ -30,7 +30,6 @@ export default function Login() {
 
       const data = await response.json();
       if (response.status === 200) {
-        console.log(data);
         navigate('/notes', { state: { user: data.user } })
       } else {
         setErrors(data.detail)

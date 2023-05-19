@@ -35,14 +35,11 @@ export default function Register() {
       });
       const data = await response.json();
       if (response.status === 200) {
-        console.log(data);
         navigate('/login');
       } else {
         setErrors(data[0]);
-        console.log(data)
       }
     } catch (error) {
-      console.log(error);
     }
     
   };
