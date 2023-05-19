@@ -27,7 +27,7 @@ jobs:
         run: npm install
 
       - name: Test
-        run: npm test
+        run: npm coverage
 
       - name: jest report
         run: npm run sonar-test
