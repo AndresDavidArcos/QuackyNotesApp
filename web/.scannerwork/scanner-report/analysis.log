@@ -19,11 +19,11 @@ Bundled analyzers:
   - Configuration detection fot Code Quality and Security 1.2.0.267 (config)
 Global server settings:
   - sonar.core.id=147B411E-AYgpu8jqrloyiYPWQDb4
-  - sonar.core.startTime=2023-05-18T15:29:13+0000
+  - sonar.core.startTime=2023-05-19T19:08:27+0000
   - sonar.forceAuthentication=true
 Project server settings:
 Project scanner properties:
-  - sonar.exclusions=**/node_modules/**, **/coverage/**
+  - sonar.exclusions=**/node_modules/**
   - sonar.host.url=http://localhost:9000
   - sonar.javascript.lcov.reportPaths=coverage/lcov.info
   - sonar.language=js
@@ -31,14 +31,16 @@ Project scanner properties:
   - sonar.organization=AndresDavidArcos
   - sonar.password=******
   - sonar.projectBaseDir=S:\OneDrive - correounivalle.edu.co\QuackyNotesApp\web
+  - sonar.projectDescription=Just for demo...
   - sonar.projectKey=quackynotes
+  - sonar.projectName=react_app
   - sonar.projectVersion=1.0
   - sonar.scanner.app=ScannerNpm
   - sonar.scanner.appVersion=3.0.1
   - sonar.sourceEncoding=UTF-8
-  - sonar.sources=src
+  - sonar.sources=./src
   - sonar.test.inclusions=**/*.test.js
   - sonar.testExecutionReportPaths=test-report.xml
-  - sonar.tests=src
+  - sonar.tests=./src/__test__
   - sonar.token=******
   - sonar.working.directory=S:\OneDrive - correounivalle.edu.co\QuackyNotesApp\web\.scannerwork

@@ -19,20 +19,9 @@
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --coverage --watchAll --collect-coverage",
+    "test-sonar": "react-scripts test --watchAll=false --coverage --testResultsProcessor jest-sonar-reporter",
     "eject": "react-scripts eject",
-    "sonar": "sonar-scanner"
-  },
-  "jest": {
-    "coverageReporters": [
-      "default",
-      [
-        "jest-junit",
-        {
-          "outputDirectory": "reports",
-          "outputName": "report.xml"
-        }
-      ]
-    ]
+    "sonar": "node sonarqube-scanner.js"
   },
   "eslintConfig": {
     "extends": [

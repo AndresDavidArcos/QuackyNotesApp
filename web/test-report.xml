@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="S:\OneDrive - correounivalle.edu.co\QuackyNotesApp\web\src\__test__\App.test.js">
+    <testCase name="Pruebas con JEST renderiza 3 elementos de tipo li" duration="1605"/>
+  </file>
+  <file path="S:\OneDrive - correounivalle.edu.co\QuackyNotesApp\web\src\__test__\Login.test.js">
+    <testCase name="Login component should display an error message for unrecognized email" duration="1899"/>
+    <testCase name="Login component should display an error message for incorrect password" duration="728"/>
+    <testCase name="Login component navegación después de una respuesta exitosa" duration="719"/>
+  </file>
+</testExecutions>
