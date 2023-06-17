@@ -33,3 +33,6 @@ jobs:
 
     - name: 'Run coverage'
       run: npm run coverage
+      
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@master
