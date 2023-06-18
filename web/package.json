@@ -37,11 +37,8 @@
       "/node_modules/",
       "./src/App.js",
       "./src/index.js",
-      "./src/components/NavBar.js",
       "./src/components/NavBarClean.js",
-      "./src/components/NavBar.js",
-      "./src/components/Notes.js",
-      "./src/components/Nota.js"
+      "./src/components/Notes.js"
     ]
   },
   "browserslist": {
