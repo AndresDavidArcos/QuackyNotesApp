@@ -12,8 +12,11 @@ class NotasDetail(generics.RetrieveUpdateDestroyAPIView):
      queryset = Notas.objects.all()
      serializer_class = NotasSerializer
 
-     def get_queryset(self):
-        user_id = self.kwargs['pk']
-        queryset = Notas.objects.filter(id_usuario=user_id)
-        return queryset
     
+class NoteByUserView(generics.ListAPIView):
+    serializer_class = NotasSerializer
+
+    def get_queryset(self):
+        id_usuario = self.kwargs['pk']
+        queryset = Notas.objects.filter(id_usuario=id_usuario)
+        return queryset
